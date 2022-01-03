@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Local
-    'app1.apps.App1Config'
+    'app1.apps.App1Config',
+    'app2.apps.App2Config',
 ]
 
 MIDDLEWARE = [
@@ -124,3 +125,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'apikey'
+EMAIL_HOST_PASSWORD = 'APIKeyCreatedAtSendGrid'
+DEFAULT_FROM_EMAIL = 'sendgrid.sender.provider@email.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True

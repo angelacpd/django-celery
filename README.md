@@ -68,8 +68,14 @@ sudo rabbitmqctl stop
 
 ## Run celery worker
 
+Ubuntu OS
 ```shell
-celery -A core worker -l info
+celery -A core worker --loglevel=info
+```
+
+Windows OS
+```shell
+celery -A core worker -l info --pool=solo
 ```
 
 ## Run tasks
@@ -93,7 +99,7 @@ python3 manage.py shell
 
 > [2022-01-03 14:33:09,788: INFO/ForkPoolWorker-8] Task app1.tasks.add[33443489-a3e7-46e1-a83a-5bfca33a6ce2] succeeded in 0.0002217720011685742s: 8
 
-- Run task asynchronously
+- Run task 'add' asynchronously
 > add.apply_async((3, 3), countdown=5)
 
 Output:
@@ -103,3 +109,15 @@ Output:
 > [2022-01-03 14:35:04,733: INFO/MainProcess] Task app1.tasks.add[8e3760ef-4257-4fbe-9813-4ea5a6711dec] received
 
 > [2022-01-03 14:35:11,593: INFO/ForkPoolWorker-8] Task app1.tasks.add[8e3760ef-4257-4fbe-9813-4ea5a6711dec] succeeded in 0.00033385799906682223s: 6
+
+Send Email review
+
+- Go to http://localhost:8000/reviews/
+- Fill the form
+
+- Result:
+> [2022-01-03 22:50:40,841: INFO/MainProcess] Task send_review_email_task[103684d2-0539-46b6-b1ec-341284688409] received
+
+> [2022-01-03 22:50:40,843: INFO/ForkPoolWorker-8] send_review_email_task[103684d2-0539-46b6-b1ec-341284688409]: Send review email
+
+> [2022-01-03 22:50:44,198: INFO/ForkPoolWorker-8] Task send_review_email_task[103684d2-0539-46b6-b1ec-341284688409] succeeded in 3.3558420879999176s: 1
