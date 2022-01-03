@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "django-celery"
+version = "0.1.0"
+description = "Django project with celery from Very Academy https://www.youtube.com/watch?v=fBfzE0yk97k."
+authors = ["Angela Crepaldi <angelacpd@live.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
