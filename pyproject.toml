@@ -6,6 +6,7 @@ authors = ["Angela Crepaldi <angelacpd@live.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
+Django = "^4.0"
 
 [tool.poetry.dev-dependencies]
 
