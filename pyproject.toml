@@ -6,8 +6,10 @@ authors = ["Angela Crepaldi <angelacpd@live.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
-Django = "^4.0"
+Django = "3.2.11"
 celery = "^5.2.3"
+flower = "^1.0.0"
+django-celery-beat = "^2.2.1"
 
 [tool.poetry.dev-dependencies]
 
