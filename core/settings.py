@@ -134,3 +134,6 @@ EMAIL_HOST_PASSWORD = 'APIKeyCreatedAtSendGrid'
 DEFAULT_FROM_EMAIL = 'sendgrid.sender.provider@email.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+# Copy the REDIS_URL.
+CELERY_BROKER_URL = 'rediss://:**@ec2-3-229-116-99.compute-1.amazonaws.com:7850'

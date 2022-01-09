@@ -4,7 +4,7 @@ Based on [Learn Django - Celery](https://www.youtube.com/watch?v=fBfzE0yk97k&lis
 
 ## Dependencies
 
-The tutorial uses pip en virtualenv to manage packages. You can install the python packages from requirements.txt,
+The tutorial uses pip and virtualenv to manage packages. You can install the python packages from requirements.txt,
 however I decided to use poetry.
 
 ```shell
@@ -65,6 +65,15 @@ systemctl status rabbitmq-server
 ```shell
 sudo rabbitmqctl stop
 ```
+
+## Redis
+
+- Create an app on Heroku and add Redis.
+- Get the REDIS_URL
+```shell
+heroku redis:credentials REDIS_URL -a myapp
+```
+More on https://devcenter.heroku.com/articles/managing-heroku-redis-using-cli#redis-credentials
 
 ## Run celery worker
 
