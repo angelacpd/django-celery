@@ -2,6 +2,8 @@
 
 Based on [Learn Django - Celery](https://www.youtube.com/watch?v=fBfzE0yk97k&list=PLOLrQ9Pn6caz-6WpcBYxV84g9gwptoN20)
 
+This project started using RabbitMQ and changed to Redis.
+
 ## Dependencies
 
 The tutorial uses pip and virtualenv to manage packages. You can install the python packages from requirements.txt,
