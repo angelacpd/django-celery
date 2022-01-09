@@ -8,6 +8,7 @@ authors = ["Angela Crepaldi <angelacpd@live.com>"]
 python = "^3.8"
 Django = "^4.0"
 celery = "^5.2.3"
+redis = "^4.1.0"
 
 [tool.poetry.dev-dependencies]
 
