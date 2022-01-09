@@ -78,6 +78,24 @@ Windows OS
 celery -A core worker -l info --pool=solo
 ```
 
+## Run celery beat
+
+```shell
+celery -A core beat -l info
+```
+
+Run periodic tasks from database
+```shell
+celery -A core beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler
+```
+
+## Run Flower
+
+```shell
+celery -A core flower --port=5555
+```
+
+
 ## Run tasks
 
 - Open Django shell

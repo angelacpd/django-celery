@@ -6,3 +6,9 @@
 
 # SQLite
 db.sqlite3
+
+# Celery beat
+celerybeat-schedule
+
+# App3 output
+db.json
