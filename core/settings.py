@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Third party
     'django_celery_beat',
+    'django_celery_results',
 
     # Local
     'app1.apps.App1Config',

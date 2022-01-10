@@ -28,6 +28,9 @@ colorama==0.4.4; python_version >= "3.7" and python_full_version < "3.0.0" and p
 django-celery-beat==2.2.1 \
     --hash=sha256:97ae5eb309541551bdb07bf60cc57cadacf42a74287560ced2d2c06298620234 \
     --hash=sha256:ab43049634fd18dc037927d7c2c7d5f67f95283a20ebbda55f42f8606412e66c
+django-celery-results==2.2.0 \
+    --hash=sha256:d5f83fad9091e52cd6dbb3ca80632153ad14b6cdac4d73258e040f92717237cb \
+    --hash=sha256:cc0285090a306f97f1d4b7929ed98af0475bf6db2568976b3387de4fbe812edc
 django-timezone-field==4.2.1; python_version >= "3.5" \
     --hash=sha256:97780cde658daa5094ae515bb55ca97c1352928ab554041207ad515dee3fe971 \
     --hash=sha256:6dc782e31036a58da35b553bd00c70f112d794700025270d8a6a4c1d2e5b26c6
