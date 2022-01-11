@@ -139,3 +139,29 @@ Send Email review
 > [2022-01-03 22:50:40,843: INFO/ForkPoolWorker-8] send_review_email_task[103684d2-0539-46b6-b1ec-341284688409]: Send review email
 
 > [2022-01-03 22:50:44,198: INFO/ForkPoolWorker-8] Task send_review_email_task[103684d2-0539-46b6-b1ec-341284688409] succeeded in 3.3558420879999176s: 1
+
+
+## Run application
+
+- Apply migrations
+```shell
+python3 manage.py migrate
+```
+
+- Create superuser
+```shell
+python3 manage.py createsuperuser
+```
+
+- Create cache table
+<!--
+python3 manage.py createcachetable --dry-run
+-->
+```shell
+python3 manage.py createcachetable
+```
+
+- Run application
+```shell
+python3 manage.py runserver 8000
+```
