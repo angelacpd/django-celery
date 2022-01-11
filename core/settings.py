@@ -152,6 +152,8 @@ CELERY_BEAT_SCHEDULE = {
     },
 }
 
+CELERY_RESULT_BACKEND = 'django-db'
+
 """ crontab() Execute every minute.
 crontab(minute=0, hour=0) Execute daily at midnight.
 crontab(minute=0, hour='*/3') Execute every three hours: midnight, 3am, 6am, 9am, noon, 3pm, 6pm, 9pm.
